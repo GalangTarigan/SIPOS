@@ -1,0 +1,29 @@
+.slide {
+    display: inline-block;
+    font-size: 25px;
+    line-height: 28px;
+    padding: 7px 4px;
+    margin: 5px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    background-color: #2874f0;
+    border-radius: 30%;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .image {
+    height: auto;
+    width: auto;
+    max-height: 400px;
+    max-width: 150%;
+    display: block;
+    margin: 0 auto;
+  }
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 2%;
+  }

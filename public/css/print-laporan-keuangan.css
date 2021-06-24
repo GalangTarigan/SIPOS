@@ -1,0 +1,157 @@
+body {
+    font: Georgia, "Times New Roman", Times, serif;
+    font-size: 12px;
+    line-height: 1.3;
+    padding-top: 20px;
+}
+th {
+    font-size: 16px;
+}
+tr{
+    font-size: 16px;
+}
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.heading {
+    width: 100%;
+    height: 20px;
+    display: block;
+    padding-bottom: 10px;
+}
+table {
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+@media screen {
+    .page-footer {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 15px;
+        border-top: 1px solid black; /* for demo */
+    }
+    .page-header {
+        display: none;
+        position: fixed;
+        top: 0mm;
+        width: 100%;
+        height: 15px;
+        padding: 2px;
+    }
+}
+@media print {
+    @page {
+        size: A4;
+        margin: 2cm 1cm 1cm 1cm;
+    }
+    @page :first {
+      margin: 1cm 1cm 1cm 1cm;
+    }
+    .page-footer::before {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 15px;
+        border-top: 1px solid black; /* for demo */
+    }
+    .page-footer::after {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 15px;
+        padding: 2px;
+    }
+
+    .page-header {
+        position: fixed;
+        top: 0mm;
+        width: 100%;
+        height: 15px;
+        padding: 2px;
+    }
+    html,
+    body {
+        width: 210mm;
+        height: 297mm;
+    }
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.custom-page-start {
+    margin-top: 50px;
+}
+.width2 {
+    width: 2%;
+}
+
+.width3 {
+    width: 3%;
+}
+.width4 {
+    width: 4%;
+}
+
+.width5 {
+    width: 5%;
+}
+
+.width7{
+    width: 7%;
+}
+
+.width9{
+    width: 9%;
+}
+
+.width10 {
+    width: 12%;
+}
+
+.width12 {
+    width: 14%;
+}
+
+.width14 {
+    width: 16%;
+}
+
+.width15 {
+    width: 18%;
+}
+.width20 {
+    width: 20%;
+}
+.width30 {
+    width: 30%;
+}
+.width40 {
+    width: 40%;
+}
+.width50 {
+    width: 50%;
+}
+.width60 {
+    width: 60%;
+}
+.width65 {
+    width: 65%;
+}
+.width70 {
+    width: 70%;
+}

@@ -1,0 +1,23 @@
+
+    th {
+        text-align: center;
+    }  
+    td {
+        text-align: center;
+    }
+    .a{
+        width: 10%;
+    }
+    .b{
+        width: 25%;
+    }
+    .hide {
+        display: none;
+      }
+
+    /* .panel .panel-heading .nav-tabs li a.active.show{
+        background: rgb(253, 253, 253);
+        border-left: 1px solid #e0e0e0;
+        border-top: 1px solid #e0e0e0;
+        border-right: 1px solid #e0e0e0;
+    } */

@@ -1,0 +1,46 @@
+.mbot{
+    margin-bottom: 0;
+    margin-top: 0;
+    outline: 0px;
+}
+
+.labalaba{
+    font-family: Poppins;
+    font-size: 16.5px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.selip2{
+    font-family: Poppins;
+    font-size: 15px;   
+}
+
+.totalHarga{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.bold{
+    font-weight:bold;
+    color:black;
+    
+}
+
+.boldPutih{
+    font-weight:bold;
+    color:white;
+}
+
+.center{
+    text-align: center;
+}
+
+
+.column {
+    float: left;    
+  }
+
+.aturHead{
+    padding-top: 10px !important;;
+}  

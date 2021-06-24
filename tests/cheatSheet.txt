@@ -1,0 +1,15 @@
+//Run Laravel dusk test
+php artisan dusk
+
+//Run php unit test
+vendor/bin/phpunit
+
+//Run php unit test with filter
+vendor/bin/phpunit --filter {nama method}
+
+//new
+1. feature itu untuk melalukan testing secara komplit, lengkap atau sempurna
+2. unit untuk melakukan testing single
+3. untuk nama file baru harus diawali huruf besar dan diakhiri dengan kata test misal CobaTest.php
+4. nama function yag akan diuji harus diawali dengan kalimat test testCoba(). 
+kalau coba( )saja maka tidak dapat dijalankan
