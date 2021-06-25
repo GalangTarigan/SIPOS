@@ -10,7 +10,7 @@ class Barang extends Model
     protected $connection = 'mysql';
     protected $primaryKey = 'id_barang';
     protected $fillable = [
-        'tipe_barang', 'jumlah', 'modal', 'jual', 'keterangan_barang', 'kategori_id', 'sales_id', 
+        'tipe_barang', 'jumlah', 'modal', 'jual', 'keterangan_barang', 'kategori_id', 'sales_id', 'merk_id'
     ];
 
     // public function daftar_kategori(){

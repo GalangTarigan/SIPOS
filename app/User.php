@@ -20,7 +20,7 @@ class User extends Authenticatable implements MustVerifyEmail
      * @var array
      */
     protected $connection = 'mysql';
-    protected $table ='users';
+    protected $table = 'users';
     protected $primaryKey = 'id';
     protected $fillable = [
         'nama_lengkap', 'alamat', 'email', 'password', 'no_telepon', 'foto', 'role', 'created_at', 'updated_at'
@@ -44,15 +44,16 @@ class User extends Authenticatable implements MustVerifyEmail
         'email_verified_at' => 'datetime',
     ];
 
-    public function hasDefaultRole(){
+    public function hasDefaultRole()
+    {
         return $this->role === self::user;
     }
-    public function hasAdminRole(){
+    public function hasAdminRole()
+    {
         return $this->role === self::admin;
     }
-    public function hasKasirRole(){
+    public function hasKasirRole()
+    {
         return $this->role === self::kasir;
     }
-   
-
 }
