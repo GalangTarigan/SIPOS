@@ -349,7 +349,16 @@ class ManajemenBarangController extends Controller
             ]);
         } elseif (!empty($request->kategori_barang) && !empty($request->merk)) {
             // echo "kategori dan merk yang diubah";
-            Barang::where('id_barang', $request->id_barang)->update([
+            // Barang::where('id_barang', $request->id_barang)->update([
+            //     "merk_id" => $request->merk,
+            //     "tipe_barang" => $request->tipe_barang,
+            //     "jumlah" => $request->jumlah,
+            //     "modal" => $request->modal,
+            //     "jual" => $request->jual,
+            //     "keterangan_barang" => $request->keterangan_barang,
+            //     "kategori_id" => $request->kategori_barang
+            // ]);
+            $this->barangRepository->updateById($request->id_barang, [
                 "merk_id" => $request->merk,
                 "tipe_barang" => $request->tipe_barang,
                 "jumlah" => $request->jumlah,

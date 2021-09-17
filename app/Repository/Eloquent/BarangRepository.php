@@ -18,4 +18,8 @@ class BarangRepository extends BaseRepository implements BarangRepositoryInterfa
     {
         parent::__construct($model);
     }
+    public function updateById($id, array $data)
+    {
+        Barang::where('id_barang', $id)->update($data);
+    }
 }

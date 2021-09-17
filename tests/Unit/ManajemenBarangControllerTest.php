@@ -19,7 +19,7 @@ class ManajemenBarangControllerTest extends TestCase
      */
     public function testJalur1()
     {
-        // Event::fake();
+        // mock upload file
         $file = UploadedFile::fake()->create('barang.jpg', 100, 100);
         //stub auth () -> hasAdminRole()
         $admin = User::find(1);
@@ -31,7 +31,7 @@ class ManajemenBarangControllerTest extends TestCase
             $barangDummy->id_barang = '46';
             $barangDummy->merk_id = '6';
             $barangDummy->tipe_barang = 'Sabeb';
-            $mock->shouldReceive('create')->once()->andReturn($barangDummy);
+            $mock->shouldReceive('create')->andReturn($barangDummy);
         }));
         //stub merk barang repository (merk barang model)
         $this->instance('App\Repository\MerkBarangRepositoryInterface', Mockery::mock('App\Repository\MerkBarangRepositoryInterface', function ($mock) {
@@ -53,8 +53,9 @@ class ManajemenBarangControllerTest extends TestCase
             'nama_sales' => '1',
             'keterangan_barang' => 'TV saya',
             'kategori_barang' => '1',
-            'images' => [$file, $file]
-        ])->assertRedirect('/admin/manajemen-barang/show-daftar-barang');
+            // 'images' => [$file, $file, $file, $file, $file, $file]
+        ])->assertSessionHas('errors', 'Foto barang tidak boleh kosong');
+        // dd($reponse);
         //assert rediret diatas utk mengecek apakah ketika sukses diarahkan ke route tsb.
     }
 }
